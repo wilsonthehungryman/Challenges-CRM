@@ -1,0 +1,13 @@
+.customer
+  h2 = customer.name
+  p = image_tag customer.image, alt: "#{customer.name}'s picture"
+  p
+    strong Phone:
+    = customer.phone
+  p
+    strong Email:
+    = customer.email
+  p
+    strong Notes:
+    = customer.notes
+        
