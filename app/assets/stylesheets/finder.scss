@@ -1,3 +1,16 @@
 // Place all the styles related to the finder controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.customer{
+  width: 350px;
+  height: 450px;
+  border: 1px black solid;
+  background-color: white;
+  margin: 8px;
+  display: inline-block;
+  float:left;
+  padding: 10px;
+  p{
+    font-size: 140%;
+  }
+}

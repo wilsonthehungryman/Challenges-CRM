@@ -1,13 +1,15 @@
 .customer
-  h2 = customer.name
-  p = image_tag customer.image, alt: "#{customer.name}'s picture"
-  p
-    strong Phone:
-    = customer.phone
-  p
-    strong Email:
-    = customer.email
-  p
-    strong Notes:
-    = customer.notes
-        
+  h1.strong = customer.name
+  p = image_tag customer.image.nil? ? "" : customer.image, alt: "#{customer.name}'s picture", size: "140x180"
+  - unless customer.phone.nil? || customer.phone == ''
+    p 
+      strong Phone: 
+      = customer.phone 
+  - unless customer.email.nil? || customer.email == ''
+    p 
+      strong Email: 
+      a = customer.email 
+  - unless customer.notes.nil? || customer.notes == ''
+    p 
+      strong Notes: 
+      = customer.notes  
