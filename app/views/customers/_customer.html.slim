@@ -9,6 +9,9 @@
     p 
       strong Email: 
       a = customer.email 
+  p 
+    strong Province: 
+    = (customer.email.nil? || customer.email == '') ? ' None' : customer.province
   - unless customer.notes.nil? || customer.notes == ''
     p 
       strong Notes: 
