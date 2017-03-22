@@ -1,2 +1,3 @@
-h1 Finder#missing_email
-p Find me in app/views/finder/missing_email.html.slim
+h1 Missing Emails
+= render partial: "layouts/nav", locals: { page: 'missing_email' }
+= render partial: 'customers/customer', collection: @customers

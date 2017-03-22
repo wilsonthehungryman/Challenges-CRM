@@ -1,2 +1,3 @@
-h1 Finder#alphabetized
-p Find me in app/views/finder/alphabetized.html.slim
+h1 Alphabetized
+= render partial: "layouts/nav", locals: { page: 'alphabetized' }
+= render partial: 'customers/customer', collection: @customers

@@ -1,0 +1,10 @@
+.nav
+  - unless page == 'index'
+    .nav_link = link_to 'All Customers ', root_path
+    .nav_link - 
+  - unless page == 'alphabetized'
+    .nav_link = link_to 'Alphabetized ', finder_alphabetized_path
+  - if page == 'index'
+    .nav_link - 
+  - unless page == 'missing_email'
+    .nav_link = link_to 'Missing Email', finder_missing_email_path
